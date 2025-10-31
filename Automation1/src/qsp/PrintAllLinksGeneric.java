@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class PrintAllLinksGeneric {
 
 	public static void main(String[] args) {
-		Scanner s= new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Url");
-		String url= s.nextLine();
+		String url= sc .nextLine();
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		List<WebElement> allLinks = driver.findElements(By.xpath("//a"));

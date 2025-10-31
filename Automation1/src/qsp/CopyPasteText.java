@@ -1,7 +1,5 @@
 package qsp;
 
-import java.util.ResourceBundle.Control;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
